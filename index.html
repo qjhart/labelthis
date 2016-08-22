@@ -21,6 +21,27 @@
     })(document);
   </script>
 
+  <script>
+
+    // setup Polymer options
+//    window.Polymer = {lazyRegister: true, dom: 'shadow'};
+    window.Polymer = {lazyRegister: true, dom: 'shady'};
+
+    // load webcomponents polyfills
+    (function() {
+      if ('registerElement' in document
+          && 'import' in document.createElement('link')
+          && 'content' in document.createElement('template')) {
+        // browser has web components
+      } else {
+        // polyfill web components
+        var e = document.createElement('script');
+        e.src = 'bower_components/webcomponentsjs/webcomponents-lite.min.js';
+        document.head.appendChild(e);
+      }
+    })();
+  </script>
+
   <link rel="stylesheet" href="css/app.css">
 
   <link rel="icon" href="images/favicon_32x32.jpg" sizes="32x32">
