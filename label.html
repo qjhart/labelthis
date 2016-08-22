@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Label This: Wine Label Transcription Project</title>
+
+    <meta name="og:title" content="Label This: Wine Label Transcription Project"/>
+    <meta name="og:description" content="Browse and transcribe historic early 20th century wine labels from the Maynard Amerine Collection at the UC Davis Library to help us create a searchable database."/>
+    <meta name="og:image" content="images/label-this-title-image.png"/>
+
+  <script>
+    (function(d) {
+    var config = {
+    kitId: 'umm3adq',
+    scriptTimeout: 3000,
+    async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
+
+  <link rel="stylesheet" href="/css/app.css">
+
+  <link rel="icon" href="images/favicon_32x32.jpg" sizes="32x32">
+  <link rel="shortcut icon" href="images/favicon_16x16.jpg">
+
+	<link rel="import" href="../bower_components/polymer/polymer.html">
+	<link rel="import" href="wine-label-labelthis.html">
+<link rel="import" href="/wine-label/wine-label-ttb.html">
+
+</head>
+
+<body>
+  <header>
+  	<nav id="large-menu" class="top-bar">
+  		<div class="top-bar-left">
+  			<ul class="menu">
+  				<li class="menu-item-large">
+  					<a href="index.html">Home</a>
+  				</li>
+  				<li class="menu-item">
+  					<a href="dummy.html">Mark</a>
+  				</li>
+  				<li class="menu-item">
+  					<a href="dummy.html">Transcribe</a>
+  				</li>
+					  				<li class="menu-item">
+  					<a href="label.html">Label Information</a>
+  				</li>
+
+          <!--
+  				<li class="menu-item-large">
+  					<a href="#">Search</a>
+  				</li>
+        -->
+  			</ul>
+  		</div>
+  		<div class="top-bar-right">
+  			<ul class="menu">
+  				<li class="menu-item-large">
+  					<a href="https://labelthisblog.library.ucdavis.edu/about-the-project/">About the Project</a>
+  				</li>
+  				<li class="menu-item-large">
+			      <a target="_blank" href="https://labelthisblog.library.ucdavis.edu">Blog</a>
+  				</li>
+  				<li class="menu-item-small">
+  					<a href="#small-menu">...</a>
+  				</li>
+  			</ul>
+  		</div>
+  	</nav>
+  </header>
+
+  
+  <div id="react-target">
+  <section class="small-12 medium-10 medium-offset-1 large-8 large-offset-2 columns step-by-step">
+    <h1>Are you interested in what's on label?</h1>
+        <div class="row">
+					<wine-label-labelthis/>
+          <div class="small-12 medium-6 columns"><p>The first thing we need is to mark the areas on each label that will eventually need transcribing or describing.</p></div>
+          <div class="small-12 medium-6 columns"><img class="step-image" src="images/image-step-1.gif" alt="Animated depiction of marking an area on a label"/></div>
+        </div>
+  </section>
+
+	</div>
+
+  <footer>
+	<nav>
+		<div class="secondary-menu">
+			<ul class="menu">
+				<li class="menu-item">
+            <li><a href="/users/sign_in">Admin login</a></li>
+
+				</li>
+				<li class="menu-item">
+					<a href="mailto:labelthis@ucdavis.edu">Questions or Comments?</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<section class="row align-center donor-links">
+		<div><img src="../../images/uc-lib-logo-label-this.svg"></a></div>
+		<small>This site was built for the <a href="https://www.lib.ucdavis.edu/dept/specol/">Special Collections Department</a> at the <a href="https://www.lib.ucdavis.edu">UC Davis Library</a>.<br/>
+ 					Help us make this and other projects possible—<a href="https://give.ucdavis.edu/ULIB/323671">support the Library.</a></small>
+	</section>
+	<section class="row align-center ucd-links">
+		<small class="legal"><a href="https://www.ucdavis.edu">University of California, Davis</a>, One Shields Avenue, Davis, CA 95616 | 530-752-1011<br/>
+			Copyright © The Regents of the <a href="http://www.universityofcalifornia.edu/">University of California</a>, Davis campus. All rights reserved.</small>
+	</section>
+	<section class="row align-spaced legal-links">
+		<div><small class="legal"><a href="https://www.ucdavis.edu/privacy-and-accessibility">Privacy & Accessibility</a></small></div>
+		<div><small class="legal"><a href="http://occr.ucdavis.edu/poc/">Principles of Community</a></small></div>
+	</section>
+</footer>
+<nav id="small-menu">
+	<ul class="sm-menu">
+		<li class="sm-menu-item close-button">
+			<a href="#large-menu">&times;</a>
+		</li>
+		<li class="sm-menu-item">
+			<a href="/">Home</a>
+		</li>
+		<li class="sm-menu-item">
+			<a href="/mark">Mark</a>
+		</li>
+		<li class="sm-menu-item">
+			<a href="">Transcribe</a>
+		</li>
+    <!--
+		<li class="sm-menu-item">
+			<a href="{{ link.templates-homepage }}">Search</a>
+		</li>
+  -->
+		<li class="sm-menu-item">
+			<a href="https://labelthisblog.library.ucdavis.edu/about-the-project/">About the Project</a>
+		</li>
+		<li class="sm-menu-item">
+			<a target="_blank" href="https://labelthisblog.library.ucdavis.edu">Blog</a>
+		</li>
+		<li class="sm-menu-item">
+			<a target="_blank" href="mailto:labelthis@ucdavis.edu">Questions or Comments?</a>
+		</li>
+		<li class="sm-menu-item">
+        <li><a href="/users/sign_in">Admin login</a></li>
+
+		</li>
+	</ul>
+</nav>
+
+  <script src="https://cdn.polyfill.io/v1/polyfill.min.js?features=default,es6,Promise,fetch&amp;flags=gated"></script>
+
+  <script src="/assets/application-c10a34608751056477bc1e348425b82c.js"></script>
+  <meta content="authenticity_token" name="csrf-param" />
+<meta content="bMCCraZgU0Ng+7VWl2BuPji0ijqQtyrUB4aXI6mjCSo=" name="csrf-token" />
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-65988958-6', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+  
+</body>
+</html>

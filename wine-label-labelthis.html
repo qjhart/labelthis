@@ -1,0 +1,45 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/wine-label/wine-label-ttb.html">
+
+
+<!--
+`wine-label-labelthis`
+Element to deliver basic wine label information for the labelthis project.
+
+>* This tag includes copyrighted material without permission.  It is only to be used for educational purposes.
+
+The label can be used as follows:
+
+    <wine-label-labelthis/>
+
+@element wine-label-labelthis
+-->
+
+<dom-module id="wine-label-labelthis">
+  <style>
+      :host {
+        --wine-label-align:center;
+        --wine-label-box-border:0px solid #4d0716;
+        --wine-label-box-radius:1px;
+        --wine-label-hover-opacity:0.3;
+        --wine-label-focus-color:#4d0716;
+        --wine-label-focus-opacity:0.4;
+        --wine-label-part-radius:5px;
+        --wine-label-part-background:#F1E3D1;
+        --wine-label-part-headline-font-size:22px;
+        --wine-label-part-headline-margin:16px 0;
+        --wine-label-part-headline-color:#4D0717;
+      }
+    </style>
+
+  </style>
+  <template>
+      <wine-label-ttb/>
+  </template>
+    <script>
+    Polymer({
+      is: 'wine-label-labelthis',
+    });
+  </script>
+
+</dom-module>
