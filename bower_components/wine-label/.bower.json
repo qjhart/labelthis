@@ -22,15 +22,15 @@
     "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0"
   },
   "homepage": "https://github.com/qjhart/wine-label",
-  "version": "0.0.9",
-  "_release": "0.0.9",
+  "version": "0.1.2",
+  "_release": "0.1.2",
   "_resolution": {
     "type": "version",
-    "tag": "v0.0.9",
-    "commit": "dd96db28a59931254b1f4ac140ce2ec12af6d003"
+    "tag": "v0.1.2",
+    "commit": "ef7e98671fc2ba60f3e1cc12437e9d6eb853a0f7"
   },
   "_source": "git://github.com/qjhart/wine-label.git",
-  "_target": "^0.0.9",
+  "_target": "^0.1.2",
   "_originalSource": "qjhart/wine-label",
   "_direct": true
 }
